@@ -1,0 +1,331 @@
+.navbar-light .navbar-nav .nav-link {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link > p {
+    color: rgba(51, 51, 51, .71);
+    display: none;
+}
+
+.product-image {
+    float: left;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    transition: transform .5s;
+}
+
+.product-image:hover{
+    transform: scale(1.03, 1.03);
+    outline-offset: 4px;
+    outline: 2px solid #000000;
+}
+
+.laravel-paginator {
+    position: relative;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.laravel-paginator > nav div:last-child > div:last-child > span{
+    text-decoration: none;
+}
+
+.laravel-paginator nav div:first-child {
+    display: none;
+}
+
+.laravel-paginator svg {
+    height: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link.active > p {
+    display: inline;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgba(51, 51, 51, .71);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(51, 51, 51, .71);
+}
+
+#homeJumb {
+    height: 80vh;
+    background: url(../images/HomeBg@2x.jpg) left / auto;
+    padding-left: 80px;
+}
+
+@media (max-width: 576px) {
+    #homeJumb {
+        height: 60vh;
+        background: url(../images/HomeBg@2x.jpg) center / cover;
+        padding-left: 20px;
+    }
+}
+
+#homeJumb p {
+    color: white;
+    font: normal normal 600 20px/24px Poppins;
+    letter-spacing: 30.42px;
+    color: #FFFFFF;
+    font-weight: 200;
+}
+
+@media (max-width: 576px) {
+    #homeJumb p {
+        color: white;
+        font: normal normal 600 20px/24px Poppins;
+        letter-spacing: 10px;
+        color: #FFFFFF;
+        font-weight: 200;
+    }
+}
+
+#homeJumb h1 {
+    color: white;
+    letter-spacing: 25px;
+    font-weight: 300;
+    font-family: 'Poppins';
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+    #homeJumb h1 {
+        color: white;
+        letter-spacing: 15px;
+        font-weight: 300;
+        font-family: 'Poppins';
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+#homeJumb button {
+    font: normal normal 200 20px Poppins;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding-bottom: 15px;
+    padding-left: 0px;
+}
+
+#homeJumb button span {
+    background-color: white;
+    width: 45px;
+    height: 3px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+#popularItems {
+    height: auto;
+    background: url(../images/wlag2x.jpg);
+    padding-top: 112px;
+    padding-bottom: 100px;
+}
+
+.section-heading {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: #171717;
+}
+
+.section-subTitle {
+    margin-top: 25px;
+    text-align: center;
+    color: #333333B5;
+    font-size: 15px;
+}
+
+.product-row {
+    margin-top: 70px;
+}
+
+.product-title {
+    margin-top: 24px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.price-label {
+    padding: 4px 20px;
+    background-color: #333333;
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+#newItems {
+    height: auto;
+    background: url(../images/wlag2x.jpg);
+    padding-top: 5px;
+    padding-bottom: 100px;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #333333;
+}
+
+p {
+    margin: 0px;
+    font-family: 'Poppins';
+}
+
+.footer .footer-link {
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    margin-right: 40px;
+}
+
+.Mainbreadcrumb {
+}
+
+.Mainbreadcrumb {
+    background: #F6F6F6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.Mainbreadcrumb p {
+    color: #333333B5;
+    font-size: 14px;
+}
+
+.shopSection {
+    padding-top: 84px;
+    padding-bottom: 115px;
+}
+
+.shopTitle {
+    color: #333333B5;
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+
+.nav-pills .nav-link {
+    background-color: transparent;
+    color: #000000;
+    font-size: 15px;
+}
+
+.nav-pills .nav-link.active {
+    background: transparent;
+    color: #333333B5;
+}
+
+.nav-pills .nav-link p {
+    display: none;
+}
+
+.nav-pills .nav-link.active p {
+    display: inline-block;
+}
+
+.shopSection .page-item .page-link {
+    background-color: #333333;
+    color: white;
+    font-family: 'Poppins';
+    font-size: 15px;
+    margin-left: 20px;
+    width: 35px;
+    padding: 0px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopSection .page-item.active .page-link {
+    background-color: #E52D22;
+    border: none;
+}
+
+.category-subtitle {
+    font: normal normal 300 15px/24px Poppins;
+    letter-spacing: 0.4px;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#cart-table .product-name-cell {
+    font-weight: 400 !important;
+    font-size: 15px;
+    color: #171717;
+}
+
+#cart-table th {
+    font-weight: 600;
+    font-size: 15px;
+    border-top: 0px;
+}
+
+#cart-table .table td {
+    font-weight: 100;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+#cart-table .table td > .quantity-div {
+    height: 40px;
+    border: 2px solid #d1d1d1;
+    /*width: 100px;*/
+}
+
+.cart-summary {
+    background-color: #f6f6f6;
+    padding: 40px 20px;
+    height: 100%;
+}
+
+#cart-Btn {
+    background: #171717;
+    border: none;
+    border-radius: 0px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+#blog-section {
+    padding-bottom: 100px;
+}
+
+p {
+    font-size: 15px;
+}
+
+#wishlist {
+    color: #171717;
+}
+
+#wishlist:hover {
+    color: #E52D22;
+    text-decoration: none;
+}
+
+#searchForm .form-group .input-group {
+    border: 2px solid #171717;
+    height: 58px;
+}
+

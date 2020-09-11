@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="189" height="189" viewBox="0 0 189 189">
+  <g id="Logo" transform="translate(-225 -252)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(225 252)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="94.5" cy="94.5" r="94.5" stroke="none"/>
+      <circle cx="94.5" cy="94.5" r="93.5" fill="none"/>
+    </g>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="81.5" cy="81.5" r="81.5" transform="translate(238 265)" fill="#fff"/>
+    <g id="Group_1" data-name="Group 1" transform="translate(0.5 0.5)">
+      <line id="Line_1" data-name="Line 1" x2="120" transform="translate(278 305) rotate(45)" fill="none" stroke="#e52d22" stroke-linecap="round" stroke-width="5"/>
+      <line id="Line_2" data-name="Line 2" x2="120" transform="translate(362.853 305) rotate(135)" fill="none" stroke="#e52d22" stroke-linecap="round" stroke-width="5"/>
+    </g>
+    <text id="W" transform="translate(310 325.5)" fill="#e52d22" font-size="20" font-family="PoiretOne-Regular, Poiret One"><tspan x="0" y="0">W</tspan></text>
+    <text id="A" transform="translate(312 384)" fill="#e52d22" font-size="20" font-family="PoiretOne-Regular, Poiret One"><tspan x="0" y="0">A</tspan></text>
+    <text id="D" transform="translate(338 355)" fill="#e52d22" font-size="20" font-family="PoiretOne-Regular, Poiret One"><tspan x="0" y="0">D</tspan></text>
+    <text id="L" transform="translate(295 355)" fill="#e52d22" font-size="20" font-family="PoiretOne-Regular, Poiret One"><tspan x="0" y="0">L</tspan></text>
+  </g>
+</svg>
