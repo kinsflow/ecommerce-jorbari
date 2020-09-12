@@ -9,12 +9,6 @@
             </div>
         </section>
     </div>
-    {{--    <section id="popularItems">--}}
-    {{--        <div class="container">--}}
-    {{--            <h1 class="section-heading text-center">popular items</h1>--}}
-    {{--            <p class="section-subTitle">our most purchased Product from various collections</p>--}}
-    {{--        </div>--}}
-    {{--    </section>--}}
     <section id="newItems">
         <div class="container">
             <h1 class="section-heading text-center">New items</h1>
@@ -22,9 +16,11 @@
             <div class="row product-row">
                 @foreach($products as $product)
                     <div class="col col-lg-4 col-md-4 col-sm-6 col-12 text-center">
-                        <img height="400" width="500" class="img-fluid product-image" src="{{asset("storage/$product->image")}}"/>
+                        <img height="400" width="500" class="img-fluid product-image"
+                             data-value="{{$product}}"
+                             src="{{asset("storage/$product->image")}}"/>
                         <p class="product-title">{{$product->title}}</p>
-                        <p class="d-inline-block price-label">{{$product->price}}</p>
+                        <p class="d-inline-block price-label">{{"N $product->price"}}</p>
                     </div>
                 @endforeach
 

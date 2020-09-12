@@ -34,11 +34,11 @@
                             <div class="tab-pane active" role="tabpanel" id="tab-1">
                                 <div class="row product-row">
                                     @foreach($products as $product)
-                                        <div class="col col-lg-4 col-md-4 col-sm-6 col-12 text-center"><img
-                                                class="img-fluid product-image"
-                                                src="{{asset("storage/$product->image")}}">
+                                        <div class="col col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+                                            <img class="img-fluid product-image"
+                                                 data-value="{{$product}}" src="{{asset("storage/$product->image")}}">
                                             <p class="product-title">{{$product->title}}</p>
-                                            <p class="d-inline-block price-label">{{$product->price}}</p>
+                                            <p class="d-inline-block price-label">{{"N $product->price"}}</p>
                                         </div>
                                     @endforeach
                                 </div>
@@ -48,17 +48,6 @@
                 </div>
             </div>
         </div>
-{{--        <div class="row">--}}
-{{--            <div class="col d-flex justify-content-center mt-5">--}}
-{{--                <nav>--}}
-{{--                    <ul class="pagination">--}}
-{{--                        <li class="page-item active"><a class="page-link" href="#">1</a></li>--}}
-{{--                        <li class="page-item"><a class="page-link" href="#">2</a></li>--}}
-{{--                        <li class="page-item"><a class="page-link" href="#">3</a></li>--}}
-{{--                    </ul>--}}
-{{--                </nav>--}}
-{{--            </div>--}}
-{{--        </div>--}}
         <div class="laravel-paginator">
             {{$products->onEachSide(3)->links()}}
         </div>

@@ -16,5 +16,8 @@
                 @endforeach
             </div>
         </div>
+        <div class="laravel-paginator">
+            {{$posts->onEachSide(3)->links()}}
+        </div>
     </section>
 @endsection

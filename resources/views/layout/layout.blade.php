@@ -24,16 +24,15 @@
             class="collapse navbar-collapse" id="navcol-1">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item" role="presentation">
-                    <a class="nav-link active" href="{{route("home")}}">
-                        <p>-</p> home</a>
+                    <a class="nav-link" href="{{route("home")}}">
+                        home</a>
                 </li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="{{route("product")}}">shop</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="{{route("blog")}}">blog</a></li>
                 <li class="nav-item" role="presentation"><a class="nav-link" href="{{route("search")}}">search</a></li>
             </ul>
             <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item" role="presentation"><a class="nav-link" href="cart.html">cart</a></li>
-{{--                <li class="nav-item" role="presentation"><a class="nav-link" href="#">login</a></li>--}}
+                <li class="nav-item" role="presentation"><a class="nav-link" href="{{route("cart")}}">cart&nbsp;<span id="cart_count" class="badge badge-danger"></span></a></li>
             </ul>
         </div>
     </div>
@@ -60,5 +59,9 @@
 </section>
 <script src="{{asset("js/jquery.min.js")}}"></script>
 <script src="{{asset("js/bootstrap.min.js")}}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="{{asset("js/cart-manager.js")}}"></script>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+
 </body>
 </html>

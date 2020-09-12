@@ -15,7 +15,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $all_product = Product::paginate(2);
+        $all_product = Product::paginate(config("app.paginator_count"));
         $all_categories = Category::all();
         return view("shop-product", ["products" => $all_product, "categories" => $all_categories]);
     }

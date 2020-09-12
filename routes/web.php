@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BlogPostController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SearchController;
@@ -27,6 +28,7 @@ Route::get('/product', [ProductController::class, 'index'])->name("product");
 Route::get('/blog', [BlogPostController::class, 'index'])->name("blog");
 Route::get('/product/{category_id}', [CategoryController::class, 'show'])->name("category_product");
 Route::get('/search', [SearchController::class, 'search'])->name("search");
+Route::get('/cart', [CartController::class, 'index'])->name("cart");
 
 
 Route::group(['prefix' => 'admin'], function () {

@@ -2,6 +2,8 @@
 
 return [
 
+    'paginator_count' => env('PAGINATOR_COUNT', 10),
+
     /*
     |--------------------------------------------------------------------------
     | Application Name
