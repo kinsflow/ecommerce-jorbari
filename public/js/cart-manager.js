@@ -16,6 +16,8 @@ const save_image_to_cart = () => {
         let save = store_to_local_storage(product)
         if (save === "OK") {
             swal("Product Added To Cart Successfully")
+            let cart_count = JSON.parse(localStorage.getItem("cart_payload")).length
+            $("#cart_count").text(cart_count)
         }
     })
 }
@@ -75,6 +77,13 @@ const get_sum_of_selected_data = () => {
             total_sum += parseInt(parse_object.price);
         }
         $(".sum-total").text(`N ${total_sum}`)
+    } else {
+        /**
+         * disable the payout and delete button
+         * when there are no product in the cart
+         */
+        $("#cart-Btn").attr("disabled", true)
+        $("#drop-cart-Btn").attr("disabled", true)
     }
     return total_sum;
 }
@@ -87,7 +96,7 @@ const handle_clear_local_storage = () => {
 
         swal({
             title: "Are you sure?",
-            text: "you will loose all available data in the cart!",
+            text: "you will loose all available product in the cart!",
             icon: "warning",
             buttons: true,
             dangerMode: true,
@@ -97,6 +106,7 @@ const handle_clear_local_storage = () => {
                     localStorage.removeItem("cart_payload");
                     let table_body = $("#cart-collections");
                     table_body.empty()
+                    $("#cart_count").text(null)
                     swal("Poof! You emptied your cart already!", {
                         icon: "success",
                     });
